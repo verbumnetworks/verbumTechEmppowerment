@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
+import Banner from "@/components/Banner";
 
 export const metadata: Metadata = {
   title: "Verbum Tech Empowerment Program",
@@ -24,6 +25,7 @@ export default function RootLayout({
           {children}
         </main>
         <footer>
+          <Banner/>
           <Footer />
         </footer>
       </body>
