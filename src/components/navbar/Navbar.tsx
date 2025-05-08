@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
+import { navLinks } from '@/constant/constants';
 import DonateButton from '../button/DonateButton';
 
 const Navbar = () => {
@@ -11,28 +12,28 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-[#0C1A2B] text-gray-300 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 text-black font-bold text-xl">
-            <Link href="/">largerthan<span className="text-blue-600">/</span></Link>
+          <div className="flex-shrink-0 text-gray-50 font-bold text-xl">
+            <Link href="/">Verbum_Tech</Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
-            {['Home', 'About us', 'What We Do', 'Media', 'Contact'].map((item) => (
+            {navLinks.map((link) => (
               <Link
-                key={item}
-                href={`/${item.toLowerCase().replace(/\s/g, '-')}`}
-                className="text-sm font-medium text-gray-700 hover:text-black transition duration-300"
+                key={link.index}
+                href={link.url}
+                className="text-sm font-medium text-gray-50 hover:text-[#b41313]  transition duration-300"
               >
-                {item}
+                {link.title}
               </Link>
             ))}
             <DonateButton
               text="Donate"
-              className="bg-[#1C1C2A] text-white py-2 px-4 rounded hover:bg-[#34344a] transition"
+              className=" text-white py-2 px-4 rounded transition"
               link="/donate"
             />
           </div>
@@ -57,7 +58,7 @@ const Navbar = () => {
             <Link
               key={item}
               href={`/${item.toLowerCase().replace(/\s/g, '-')}`}
-              className="text-sm font-medium text-gray-700 hover:text-black transition duration-300"
+              className="text-sm font-medium text-gray-50 hover:text-[#b41313] transition duration-300"
               onClick={() => setIsOpen(false)}
             >
               {item}
@@ -65,7 +66,7 @@ const Navbar = () => {
           ))}
           <DonateButton
             text="Donate"
-            className="bg-[#1C1C2A] text-white py-2 px-4 rounded hover:bg-[#34344a] transition"
+            className="text-white py-2 px-4 roundedt ransition"
             link="/donate"
           />
         </div>

@@ -18,12 +18,9 @@ export const navLinks: NavLink[] = [
     index:3,
     title: "Programs", url: "/programs"
  },
-{
-    index:4,
-    title: "Get Involved", url: "/get-involved" 
-},
+
 { 
-    index:5,
+    index:4,
     title: "Contact", url: "/contact"
  },
 ];

@@ -1,9 +1,9 @@
 'use client';
 const Banner = () => {
   return (
-    <section className="bg-teal-900 text-white py-16 px-4 text-center">
+    <section className="bg-[#D7E6EF] text-gray-800 py-16 px-4 text-center">
       <h2 className="text-2xl md:text-3xl font-bold mb-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Empowering lives through technology education and access.
       </h2>
       <form
         onSubmit={(e) => e.preventDefault()}
@@ -15,8 +15,8 @@ const Banner = () => {
           className="w-full sm:w-2/3 px-4 py-3 rounded-md text-gray-800 focus:outline-none bg-amber-50"
         />
       </form>
-      <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold mt-4 px-6 py-3 rounded-md transition"
-      >Subscribe</button>
+      <button type="submit" className="bg-[#b41313] hover:bg-[#8F0000] text-white font-semibold mt-4 px-6 py-3 rounded-md transition"
+      >Sponsor an Intern</button>
     </section>
   );
 };

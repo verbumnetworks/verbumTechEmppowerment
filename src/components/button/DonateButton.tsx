@@ -16,7 +16,7 @@ const DonateButton: React.FC<DonateButtonProps> = ({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ${className}`}
+      className={`inline-block bg-[#b41313] hover:bg-[#8F0000] text-white font-semibold py-2 px-2 rounded shadow-md transition duration-300 ${className}`}
     >
       {text}
     </Link>
