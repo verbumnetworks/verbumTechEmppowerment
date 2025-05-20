@@ -1,16 +1,19 @@
 // import Image from "next/image";
 import Hero from "@/components/home/Hero";
-import About from "@/components/home/About";
+import About from "@/components/home/AboutSection";
+import Navbar from "@/components/navbar/Navbar";
+import FeaturedPrograms from "@/components/home/FeaturedPrograms";
+import TestimonialSlider from '@/components/home/TestimonialSlider';
 
 export default function Home() {
   return (
-    <main className="pt-14">
-      <Hero
-        title="Support a Cause That Matters"
-        subtitle="Your contribution helps us empower communities through technology."
-        backgroundImage="/assets/hero-img.jpg"
-      />
-      <About/>
+    <main>
+      <Navbar />
+      <Hero />
+      <About />
+      <FeaturedPrograms />
+            <TestimonialSlider />
+
     </main>
   );
 }

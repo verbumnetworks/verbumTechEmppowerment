@@ -1,9 +1,15 @@
 'use client';
-import React from 'react';
-
+import Pagebanner from '@/components/Pagebanner';
 const Contact: React.FC = () => {
   return (
+    <main className='w-full'>
+       <Pagebanner
+        title="Contact Us"
+        subtitle ="Who we are and what we stand for"
+        backgroundImage="/assets/hero-img.jpg"
+      />
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 max-w-screen-xl mx-auto">
+     
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-4 text-gray-800">Contact Us</h2>
         <p className="text-gray-600">We’d love to hear from you! Reach out through the form or find us on the map below.</p>
@@ -42,6 +48,7 @@ const Contact: React.FC = () => {
         </div>
       </div>
     </section>
+    </main>
   );
 };
 

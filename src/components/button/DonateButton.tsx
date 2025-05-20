@@ -2,14 +2,21 @@ import Link from 'next/link';
 
 type DonateButtonProps = {
   link: string;
-  text?: string;
+  label?: string;
   className?: string;
+  variant?: "primary" | "outline";
+  loading: boolean;
+  onClick?: () => void;
+    type?: "button" | "submit" | "reset";
+
+
 };
 
 const DonateButton: React.FC<DonateButtonProps> = ({
   link,
-  text = 'Donate Now',
+  label = 'Donate Now',
   className = '',
+
 }) => {
   return (
     <Link
@@ -18,7 +25,7 @@ const DonateButton: React.FC<DonateButtonProps> = ({
       rel="noopener noreferrer"
       className={`inline-block bg-[#b41313] hover:bg-[#8F0000] text-white font-semibold py-2 px-2 rounded shadow-md transition duration-300 ${className}`}
     >
-      {text}
+      {label}
     </Link>
   );
 };

@@ -12,7 +12,7 @@ interface PageBannerProps {
 const PageBanner: React.FC<PageBannerProps> = ({
   title,
   breadcrumb = '',
-  backgroundImage = '/images/banner.jpg', // default banner background
+  backgroundImage = '/asssets/hero-img.jpg',
 }) => {
   return (
     <div
