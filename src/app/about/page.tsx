@@ -31,7 +31,7 @@ const AboutPage = () => {
             { title: 'Impact', desc: 'We drive meaningful change in communities.' },
           ].map((item) => (
             <div key={item.title} className="bg-white p-6 rounded shadow">
-              <h4 className="text-lg font-semibold mb-2 text-blue-600">{item.title}</h4>
+              <h4 className="text-lg font-semibold mb-2 text-black">{item.title}</h4>
               <p className="text-gray-600">{item.desc}</p>
             </div>
           ))}
@@ -54,7 +54,7 @@ const AboutPage = () => {
             We are a team of tech enthusiasts and educators committed to equipping students, businesses, and institutions with the digital skills they need to thrive. From basic ICT to advanced development and cybersecurity, we build capacity across all levels.
           </p>
           <Link href="/contact">
-            <button className="mt-6 bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+            <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded transition">
               Get in Touch
             </button>
           </Link>

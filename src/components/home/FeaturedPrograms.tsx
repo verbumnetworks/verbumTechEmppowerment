@@ -1,23 +1,26 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const programs = [
   {
-    title: 'Web DeveLopment',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa.',
-    image: '/assets/hero-img.jpg'
+    title: "Web DeveLopment",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa.",
+    image: "/assets/hero-img.jpg",
   },
   {
-    title: 'Graphic Design',
-    description: 'S psum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa.',
-    image: '/assets/hero-img.jpg'
+    title: "Graphic Design",
+    description:
+      "S psum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa.",
+    image: "/assets/hero-img.jpg",
   },
   {
-    title: 'Computer Networking',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa.',
-    image: '/assets/hero-img.jpg'
+    title: "Computer Networking",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa.",
+    image: "/assets/hero-img.jpg",
   },
 ];
 
@@ -49,15 +52,17 @@ export default function FeaturedPrograms() {
               <p className="text-sm text-gray-700 mt-2 text-center">
                 {program.description}
               </p>
-             
             </div>
           </div>
         ))}
       </div>
-       <div className="mt-8 flex justify-center">
-        <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded">
+      <div className="mt-8 flex justify-center">
+        <Link
+          href="/programs"
+          className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded inline-block text-center"
+        >
           View All Programs
-        </button>
+        </Link>
       </div>
     </section>
   );
