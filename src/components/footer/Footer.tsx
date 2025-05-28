@@ -1,3 +1,6 @@
+'use client';
+import { signIn } from "next-auth/react";
+
 import DonateButton from "@/components/button/DonateButton";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 export const Footer = () => {
@@ -48,6 +51,8 @@ export const Footer = () => {
             <li>Behind MRS Filling Station Uwani Enugu</li>
             <li>+2349057054137</li>
             <li>info@verbumnetworksenugu.com</li>
+                  <button onClick ={ ()=> signIn()}>Sinin</button>
+
           </ul>
           <div className="mt-4">
             <DonateButton

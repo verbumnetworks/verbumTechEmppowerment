@@ -1,18 +1,20 @@
-// import Image from "next/image";
+'use client';
 import Hero from "@/components/home/Hero";
 import About from "@/components/home/AboutSection";
-import Navbar from "@/components/navbar/Navbar";
+// import Navbar from "@/components/navbar/Navbar";
 import FeaturedPrograms from "@/components/home/FeaturedPrograms";
 import TestimonialSlider from '@/components/home/TestimonialSlider';
+import WhyChooseUs from "@/components/home/WhyChoose";
 
 export default function Home() {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <About />
       <FeaturedPrograms />
-            <TestimonialSlider />
+      <WhyChooseUs/>
+      <TestimonialSlider />
 
     </main>
   );

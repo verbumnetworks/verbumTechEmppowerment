@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import FooterBanner from "@/components/FooterBanner";
+// import ClientLayout from "@/components/ClientLayout";
 
 export const metadata: Metadata = {
   title: "Verbum Tech Empowerment Program",
@@ -17,6 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* <ClientLayout> */}
       <body>
         <header>
           <Navbar />
@@ -29,6 +31,7 @@ export default function RootLayout({
           <Footer />
         </footer>
       </body>
+      {/* </ClientLayout> */}
     </html>
   );
 }
