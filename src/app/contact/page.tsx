@@ -15,6 +15,7 @@ const Contact: React.FC = () => {
         className="py-20 px-4 sm:px-6 lg:px-8 max-w-screen-xl mx-auto"
       >
         <div className="grid md:grid-cols-2 gap-10">
+          
           {/* Contact Form */}
           <form className="space-y-6">
             <div>
@@ -74,7 +75,7 @@ const Contact: React.FC = () => {
       <div className="mt-6 text-center mb-4">
         <h2 className="text-2xl font-bold mb-4">Still Need Help</h2>
         <p className="text-gray-600 mb-10">
-          We're here to support you anytime, anywhere
+          {"We're "}here to support you anytime, anywhere
         </p>
 
         <div className="grid md:grid-cols-3 gap-6">

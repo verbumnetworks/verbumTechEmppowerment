@@ -58,7 +58,7 @@ export const Footer = () => {
             <DonateButton
               link="https://yourdonationlink.com"
               className="bg-orange-500 hover:bg-orange-600"
-              text="Donate Now"
+              label="Donate Now"
             />
           </div>
         </div>

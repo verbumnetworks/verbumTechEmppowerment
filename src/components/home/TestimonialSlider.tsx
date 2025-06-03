@@ -30,7 +30,7 @@ const testimonials = [
 
 export default function TestimonialSlider() {
   const [index, setIndex] = useState(0);
-  const next = () => setIndex((prev) => (prev + 1) % testimonials.length);
+  // const next = () => setIndex((prev) => (prev + 1) % testimonials.length);
 
   const testimonial = testimonials[index];
 

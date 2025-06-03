@@ -1,22 +1,19 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 type DonateButtonProps = {
   link: string;
   label?: string;
   className?: string;
   variant?: "primary" | "outline";
-  loading: boolean;
+  loading?: boolean;
   onClick?: () => void;
-    type?: "button" | "submit" | "reset";
-
-
+  type?: "button" | "submit" | "reset";
 };
 
 const DonateButton: React.FC<DonateButtonProps> = ({
   link,
-  label = 'Donate Now',
-  className = '',
-
+  label = "Donate Now",
+  className = "",
 }) => {
   return (
     <Link
