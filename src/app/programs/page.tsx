@@ -2,50 +2,12 @@
 
 
 import Pagebanner from "@/components/Pagebanner"
-
-
+import { programs } from "@/constant/constants";
 
 
 import Image from "next/image";
+import Link from "next/link";
 
-const programs = [
-  {
-    title: "Web Development",
-    description:
-      "Learn how to build modern, responsive websites using HTML, CSS, JavaScript, and frameworks like React.",
-    image: "/assets/hero-img.jpg",
-  },
-  {
-    title: "Graphic Design",
-    description:
-      "Master design principles and tools like Canva, Photoshop, and Illustrator to create stunning visuals.",
-    image: "/assets/hero-img.jpg",
-  },
-  {
-    title: "Computer Networking",
-    description:
-      "Understand the fundamentals of networking, from IP addressing to setting up real-world networks.",
-    image: "/assets/hero-img.jpg",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Design user-friendly interfaces with a focus on user experience and design thinking methodologies.",
-    image: "/assets/hero-img.jpg",
-  },
-  {
-    title: "Data Analytics",
-    description:
-      "Learn how to collect, clean, and analyze data using tools like Excel, SQL, and Power BI.",
-    image: "/assets/hero-img.jpg",
-  },
-  {
-    title: "Cybersecurity",
-    description:
-      "Protect digital assets and learn ethical hacking, system hardening, and security protocols.",
-    image: "/assets/hero-img.jpg",
-  },
-];
 
 export default function Programs() {
   return (
@@ -65,7 +27,8 @@ export default function Programs() {
             key={index}
             className="bg-white rounded-lg shadow-md overflow-hidden transition hover:shadow-lg"
           >
-            <div className="h-48 w-full relative">
+            <Link href={'/programs/'+ program.id}>
+              <div className="h-48 w-full relative">
               <Image
                 src={program.image}
                 alt={program.title}
@@ -81,6 +44,8 @@ export default function Programs() {
                 {program.description}
               </p>
             </div>
+            </Link>
+          
           </div>
         ))}
       </div>

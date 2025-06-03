@@ -26,6 +26,11 @@ const reasons = [
     description:
       "Learn valuable tech skills without breaking the bank.Learn valuable tech skills without breaking the bank.Learn valuable tech skills without breaking the bank.",
   },
+   {
+    title: "Certification",
+    description:
+      "Get a certificate upon complition of the one year program.",
+  },
 ];
 
 export default function WhyChooseUs() {

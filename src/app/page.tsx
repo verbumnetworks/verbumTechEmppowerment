@@ -5,6 +5,8 @@ import About from "@/components/home/AboutSection";
 import FeaturedPrograms from "@/components/home/FeaturedPrograms";
 import TestimonialSlider from '@/components/home/TestimonialSlider';
 import WhyChooseUs from "@/components/home/WhyChoose";
+import FaqSection from "@/components/home/FaqSection";
+
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       <FeaturedPrograms />
       <WhyChooseUs/>
       <TestimonialSlider />
+      <FaqSection />
 
     </main>
   );
