@@ -72,41 +72,41 @@ const Contact: React.FC = () => {
         </div>
       </section>
       {/* Help Cards */}
-      <div className="mt-6 text-center mb-4">
-        <h2 className="text-2xl font-bold mb-4">Still Need Help</h2>
-        <p className="text-gray-600 mb-10">
-          {"We're "}here to support you anytime, anywhere
-        </p>
+    <div className="mt-6 text-center mb-4 px-4">
+  <h2 className="text-2xl font-bold mb-4">Still Need Help</h2>
+  <p className="text-gray-600 mb-10">
+    {"We're "}here to support you anytime, anywhere
+  </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-teal-50 p-6 rounded-lg shadow">
-            <Phone className="w-6 h-6 mb-4 text-teal-700" />
-            <h3 className="font-semibold mb-2">Call Support</h3>
-           <p className="text-gray-600">Reach us by phone Mon–Fri 9am–5pm.
-</p><p className="text-gray-600 text-left">+2349057054137,+2348107586270,+2347031272362</p>
-              {/* <ul className="space-y-2 text-sm">
-              <li>+2349057054137</li>
-              <li>+2348107586270</li>
-              <li>+2347031272362</li>
-            </ul> */}
-          </div>
-          <div className="bg-teal-50 p-6 rounded-lg shadow text-center">
-            <MessageCircle className="w-6 h-6 mb-4 text-teal-700 " />
-            <h3 className="font-semibold mb-2">Chat With Us</h3>
-            <p className="text-gray-600">
-              Live chat available 24/7 for quick help.
-            </p>
-          
-          </div>
-          <div className="bg-teal-50 p-6 rounded-lg shadow">
-            <MapPin className="w-6 h-6 mb-4 text-teal-700 text-center" />
-            <h3 className="font-semibold mb-2">Address</h3>
-            <p className="text-gray-600">
-              1-3 CIDJAP Street Behind MRS Filling staion Uwani, Enugu,Nigeria
-            </p>
-          </div>
-        </div>
-      </div>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Call Support */}
+    <div className="bg-teal-50 p-6 rounded-lg shadow text-center">
+      <Phone className="w-6 h-6 mb-4 text-teal-700 mx-auto" />
+      <h3 className="font-semibold mb-2">Call Support</h3>
+      <p className="text-gray-600">Reach us by phone Mon–Fri 9am–5pm.</p>
+      <p className="text-gray-600">+2349057054137<br/>+2348107586270<br/>+2347031272362</p>
+    </div>
+
+    {/* Chat With Us */}
+    <div className="bg-teal-50 p-6 rounded-lg shadow text-center">
+      <MessageCircle className="w-6 h-6 mb-4 text-teal-700 mx-auto" />
+      <h3 className="font-semibold mb-2">Chat With Us</h3>
+      <p className="text-gray-600">Live chat available 24/7 for quick help.</p>
+    </div>
+
+    {/* Address */}
+    <div className="bg-teal-50 p-6 rounded-lg shadow text-center">
+      <MapPin className="w-6 h-6 mb-4 text-teal-700 mx-auto " />
+      <h3 className="font-semibold mb-2">Address</h3>
+      <p className="text-gray-600">
+        1-3 CIDJAP Street<br />
+        Behind MRS Filling Station<br />
+        Uwani, Enugu, Nigeria
+      </p>
+    </div>
+  </div>
+</div>
+
     </main>
   );
 };

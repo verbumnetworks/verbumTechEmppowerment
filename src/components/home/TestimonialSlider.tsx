@@ -10,21 +10,21 @@ const testimonials = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
     name: "Yeshwanth",
     school: "Zzz School",
-    image: "/assets/hero-img.jpg",
+    image: "/assets/image1.jpg",
   },
   {
     quote:
-      "This is the second testimonial, showing the impact of our programs across local schools and communities.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
     name: "Amira",
     school: "Hope Academy",
-    image: "/images/testimonial2.jpg",
+    image: "/assets/youth1.jpg",
   },
   {
     quote:
       "Another voice from the ground—proving how youth-led initiatives shape a greener tomorrow.",
     name: "Tunde",
     school: "Bright Future School",
-    image: "/images/testimonial3.jpg",
+    image: "/assets/youth3.avif",
   },
 ];
 

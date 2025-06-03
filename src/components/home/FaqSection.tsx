@@ -1,5 +1,8 @@
+'use client';
+
 import Image from "next/image";
 import { AccordionItem } from "../AccordionItem";
+import { motion } from "framer-motion";
 
 const faqData = [
   {
@@ -19,6 +22,11 @@ const faqData = [
     answer:
       "Log in and go to settings > billing to cancel recurring donations.",
   },
+  {
+    question: "What Payment Methods Are Accepted?",
+    answer:
+      "We accept debit cards, credit cards, and bank transfers. More options coming soon!",
+  },
 ];
 
 export default function FaqSection() {
@@ -28,13 +36,30 @@ export default function FaqSection() {
         <h2 className="text-xl text-gray-500 mb-4">Have Any Question?</h2>
         <h1 className="text-3xl font-bold mb-10">Frequently Asked Questions</h1>
 
-        <div className="grid md:grid-cols-2 gap-10">
-          {/* Left Placeholder */}
-          <div className="bg-[#ace7f8] text-teal-950 w-full">
-            <Image src="/assets/faq.avif" width={200} height={200} alt="faq"  className="w-full"/>
-          </div>
-          {/* FAQ Items */}
-          <div className="bg-[#ace7f8] text-teal-950rounded-lg p-6 shadow">
+        <div className="grid md:grid-cols-2 gap-10 items-start">
+          {/* Animated Image */}
+          <motion.div
+            className="bg-[#ace7f8] rounded-lg overflow-hidden shadow"
+            initial={{ scale: 0.9, rotate: -2 }}
+            animate={{ scale: 1, rotate: 0 }}
+            transition={{ type: 'spring', stiffness: 80, damping: 10 }}
+          >
+            <Image
+              src="/assets/faq.avif"
+              width={600}
+              height={400}
+              alt="faq illustration"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+
+          {/* Animated FAQ Panel */}
+          <motion.div
+            className="bg-[#ace7f8] text-teal-950 rounded-lg p-6 shadow space-y-4"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+          >
             <AccordionItem
               question="Make A Difference In The Life Of A Child"
               answer="Your contribution can help provide essentials like food, education, and shelter."
@@ -46,10 +71,8 @@ export default function FaqSection() {
                 answer={faq.answer}
               />
             ))}
-          </div>
+          </motion.div>
         </div>
-
-     
       </div>
     </section>
   );

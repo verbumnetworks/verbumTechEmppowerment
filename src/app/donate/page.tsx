@@ -72,10 +72,18 @@ export default function EmpowermentDonatePage() {
         <div>
           <h2 className="text-xl font-semibold mb-2">Challenges</h2>
           <p className="text-gray-700">
-            Many talented youths lack access to the tools and platforms needed
-            to thrive in today’s digital economy. Verbum Tech Empowerment
-            bridges this gap through community-based innovation hubs, but we
-            need your help to scale.
+          Many talented youths across our communities lack access to the tools, training, and platforms needed to thrive in today’s digital economy. This digital divide continues to widen opportunities for some while leaving others behind.
+
+Verbum Tech Empowerment is our bold response to this challenge. We empower young people by providing community-based innovation hubs where they can gain practical digital skills in variouse tech fields.
+Our programs are designed to be inclusive, affordable, and impact-driven, ensuring that no one is left out due to financial or social limitations.
+
+But we can’t do it alone.
+
+To reach more underserved communities, set up more training centers, and provide up-to-date tools and internet access, we need your support. By partnering with us—whether through donations, sponsorship, or volunteer mentorship—you become a vital part of building a future where every young person has a fair chance to succeed in the digital world.
+
+Together, we can bridge the gap, unlock potential, and transform communities—one empowered youth at a time.
+
+Join the movement. Empower with Verbum.
           </p>
         </div>
       </section>
