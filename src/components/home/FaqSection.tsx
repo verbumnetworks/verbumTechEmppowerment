@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { AccordionItem } from "../AccordionItem";
-import { Phone, MessageCircle, MapPin } from "lucide-react";
 
 const faqData = [
   {
@@ -50,37 +49,7 @@ export default function FaqSection() {
           </div>
         </div>
 
-        {/* Help Cards */}
-        <div className="mt-36 text-center">
-          <h2 className="text-2xl font-bold mb-4">Still Need Help</h2>
-          <p className="text-gray-600 mb-10">
-            We're here to support you anytime, anywhere
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-6 text-left">
-            <div className="bg-teal-50 p-6 rounded-lg shadow">
-              <Phone className="w-6 h-6 mb-4 text-teal-700" />
-              <h3 className="font-semibold mb-2">Call Support</h3>
-              <p className="text-gray-600">
-                Reach us by phone Mon–Fri 9am–5pm.
-              </p>
-            </div>
-            <div className="bg-teal-50 p-6 rounded-lg shadow">
-              <MessageCircle className="w-6 h-6 mb-4 text-teal-700" />
-              <h3 className="font-semibold mb-2">Chat With Us</h3>
-              <p className="text-gray-600">
-                Live chat available 24/7 for quick help.
-              </p>
-            </div>
-            <div className="bg-teal-50 p-6 rounded-lg shadow">
-              <MapPin className="w-6 h-6 mb-4 text-teal-700" />
-              <h3 className="font-semibold mb-2">Address</h3>
-              <p className="text-gray-600">
-                Visit our HQ at 123 Hope Street, Lagos.
-              </p>
-            </div>
-          </div>
-        </div>
+     
       </div>
     </section>
   );
