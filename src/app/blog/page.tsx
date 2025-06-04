@@ -1,20 +1,28 @@
 import BlogList from "@/components/BlogList";
+import Pagebanner from '@/components/Pagebanner';
+
 
 const dummyBlogs = [
   {
-    slug: "solar-benefits",
-    title: "5 Benefits of Solar Power",
-    excerpt: "Discover why solar energy is the future for homes and businesses.",
-    coverImage: "/images/solar.jpg",
+    slug: "s",
+    title: "cohort 1",
+    excerpt: "Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    coverImage: "/assets/image3.jpg",
   },
   {
-    slug: "install-guide",
-    title: "Step-by-Step Solar Installation Guide",
-    excerpt: "From panel selection to wiring, get the full guide here.",
-    coverImage: "/images/guide.jpg",
+    slug: "i",
+    title: "chort 3",
+    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    coverImage: "/assets/youth5.jpg",
   },
 ];
 
 export default function BlogHomePage() {
-  return <BlogList blogs={dummyBlogs} />;
+  return <main>
+      <Pagebanner
+        title="Events and activities"
+        backgroundImage="/assets/hero-img.jpg"
+      />
+    <BlogList blogs={dummyBlogs} />
+  </main> ;
 }

@@ -2,7 +2,38 @@
 import  Image  from 'next/image';
 import Pagebanner from '@/components/Pagebanner';
 import Link from 'next/link';
+import { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+
+
+
+ 
+
 const AboutPage = () => {
+   const values = [
+    {
+      title: 'Innovation',
+      desc: 'We embrace creativity and forward-thinking, continuously seeking new ways to improve, evolve, and add value. We foster an environment where bold ideas are encouraged, experimentation is welcomed, and learning from failure is seen as a stepping stone to success.',
+    },
+    {
+      title: 'Integrity',
+      desc: 'We are honest, ethical, and accountable in all that we do. We uphold the highest standards of transparency and responsibility, ensuring our actions align with our words. Trust is the foundation of our relationships—with clients, colleagues, and the community—and we work diligently to earn and maintain it.',
+    },
+    {
+      title: 'Impact',
+      desc: 'We drive meaningful change in communities by using our skills, resources, and innovations to make a lasting difference. Our work is guided by a deep sense of purpose, and we strive to create solutions that uplift, empower, and inspire.',
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? values.length - 1 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev === values.length - 1 ? 0 : prev + 1));
+  };
   return (
     <main className="w-full">
       <Pagebanner
@@ -38,31 +69,53 @@ Join us and take the first step towards a tech-driven future!
         </div>
       </section>
         <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
-          Our Mission
+          OUR MISSION
         </h2>
         <p className="text-gray-600 max-w-3xl mx-auto">
           At Verbum Networks, we are dedicated to empowering individuals and organizations with cutting-edge technology solutions and ICT training that fosters growth, innovation, and success in the digital age.
         </p>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 mt-4">
+           OUR VISION
+        </h2>
+        <p className="text-gray-600 max-w-3xl mx-auto">
+          Our goal is to be one of the leading companies in the industry thereby providing productive and innovative solutions to our clients while prioritizing excellence and customers satisfaction.
+        </p>
+       
       </section>
 
       {/* Values Section */}
-      <section className="bg-gray-100 py-16 px-4 md:px-20">
-        <h3 className="text-xl md:text-2xl font-bold mb-8 text-center text-gray-800">
-          Our Core Values
-        </h3>
-        <div className="grid md:grid-cols-3 gap-8 text-center">
-          {[
-            { title: 'Innovation', desc: 'We embrace creativity and forward-thinking, continuously seeking new ways to improve, evolve, and add value. We foster an environment where bold ideas are encouraged, experimentation is welcomed, and learning from failure is seen as a stepping stone to success.' },
-            { title: 'Integrity', desc: 'We are honest, ethical, and accountable in all that we do. We uphold the highest standards of transparency and responsibility, ensuring our actions align with our words. Trust is the foundation of our relationships—with clients, colleagues, and the community—and we work diligently to earn and maintain it. ' },
-            { title: 'Impact', desc: 'We drive meaningful change in communities by using our skills, resources, and innovations to make a lasting difference. Our work is guided by a deep sense of purpose, and we strive to create solutions that uplift, empower, and inspire. ' },
-          ].map((item) => (
-            <div key={item.title} className="bg-white p-6 rounded shadow">
-              <h4 className="text-lg font-semibold mb-2 text-black">{item.title}</h4>
-              <p className="text-gray-600">{item.desc}</p>
-            </div>
-          ))}
+       <section className="bg-gray-100 py-16 px-4 md:px-20">
+      <h3 className="text-xl md:text-2xl font-bold mb-8 text-center text-gray-800">
+        Our Core Values
+      </h3>
+
+      <div className="relative flex items-center justify-center">
+        {/* Left Button */}
+        <button
+          onClick={prevSlide}
+          className="absolute left-0 md:-left-10 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-200"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+
+        {/* Slide */}
+        <div className="w-full max-w-xl bg-white p-6 rounded shadow text-center">
+          <h4 className="text-lg font-semibold mb-2 text-black">
+            {values[currentIndex].title}
+          </h4>
+          <p className="text-gray-600">{values[currentIndex].desc}</p>
         </div>
-      </section>
+
+        {/* Right Button */}
+        <button
+          onClick={nextSlide}
+          className="absolute right-0 md:-right-10 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-200"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+      </div>
+    </section>
+
 
     
       </main>

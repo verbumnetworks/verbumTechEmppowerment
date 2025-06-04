@@ -1,11 +1,12 @@
 "use client";
 
+import Link from "next/link";
 
 export default function SponsorPage() {
   return (
     <main className="min-h-screen bg-white text-[#0C1A2B]">
       {/* Hero Section */}
-      <section className="py-20 bg-orange-50 text-center px-6 md:px-20">
+      <section className="py-20 bg-black text-center px-6 md:px-20 text-white">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">Sponsor an Intern</h1>
         <p className="text-lg md:text-xl max-w-3xl mx-auto">
           Empower Africa's future by investing in young talents. Your support can launch a tech career.
@@ -22,16 +23,32 @@ export default function SponsorPage() {
       </section>
 
       {/* Areas of Sponsorship */}
-      <section className="py-16 px-6 md:px-20 bg-orange-50">
-        <h2 className="text-2xl font-bold mb-4">Areas of Sponsorship</h2>
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>Tuition support for a 1-year training program</li>
-          <li>Laptops and internet access for learners</li>
-          <li>Project materials and tech resources</li>
-          <li>Mentorship and career coaching</li>
-          <li>Transport and living stipends</li>
-        </ul>
-      </section>
+     <section className="py-16 px-6 md:px-20 bg-orange-50">
+  <div className="md:flex md:justify-between md:space-x-12">
+    {/* Left Column – Areas of Sponsorship */}
+    <div className="md:w-1/2">
+      <h2 className="text-2xl font-bold mb-4">Areas of Sponsorship</h2>
+      <ul className="list-disc list-inside text-gray-700 space-y-2">
+        <li>Tuition support for a 1-year training program</li>
+        <li>Laptops and internet access for learners</li>
+        <li>Project materials and tech resources</li>
+        <li>Mentorship and career coaching</li>
+        <li>Transport and living stipends</li>
+      </ul>
+    </div>
+
+    {/* Right Column – Program Costs */}
+    <div className="md:w-1/2 mt-8 md:mt-0">
+      <h2 className="text-2xl font-bold mb-4">Program Costs</h2>
+      <ul className="text-gray-700 space-y-2">
+        <li>➔ 📣 Digital Marketing: ₦750,000</li>
+        <li>➔ 💻 Web Development: ₦850,000</li>
+        <li>➔ 🌐 Computer Networking: ₦700,000</li>
+        <li>➔ 🔐 Cybersecurity: ₦850,000</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
       {/* Financial Breakdown Section */}
       <section className="py-16 px-6 md:px-20 bg-white">
@@ -44,12 +61,18 @@ export default function SponsorPage() {
             <p>✔ Tuition & Learning Materials: <strong>$500</strong></p>
             <p>✔ Laptop & Internet Access: <strong>$300</strong></p>
           </div>
+     
           <div>
             <p>✔ Mentorship & Supervision: <strong>$150</strong></p>
             <p>✔ Transport & Stipends: <strong>$250</strong></p>
           </div>
         </div>
         <p className="mt-6 text-lg font-semibold">Total per intern: <span className="text-orange-600">$1,200</span></p>
+         <Link href="/donate">
+            <button className="mt-6 bg-orange-500 hover:bg-orange-600 hover:cursor-pointer text-white px-6 py-3 rounded transition">
+             Donate
+            </button>
+          </Link>
       </section>
 
       {/* How to Sponsor */}
