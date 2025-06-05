@@ -4,26 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const programs = [
-  {
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa.",
-    image: "/assets/image1.jpg",
-  },
-  {
-    title: "Graphic Design",
-    description:
-      "S psum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa.",
-    image: "/assets/image2.jpg",
-  },
-  {
-    title: "Computer Networking",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa.",
-    image: "/assets/image3.jpg",
-  },
-];
+import constants from "constants";
+import { featuredprograms } from "@/constant/constants";
 
 export default function FeaturedPrograms() {
   return (
@@ -43,14 +25,14 @@ export default function FeaturedPrograms() {
       </motion.h2>
 
       <div className="grid gap-6 md:grid-cols-3 cursor-pointer">
-        {programs.map((program, index) => (
+        {featuredprograms.map((program, id) => (
           <motion.div
-            key={index}
+            key={id}
             className="bg-white rounded-lg shadow-md overflow-hidden"
             whileHover={{ scale: 1.03 }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 + index * 0.2, duration: 0.5 }}
+            transition={{ delay: 0.2 + id * 0.2, duration: 0.5 }}
           >
             <div className="h-48 w-full relative">
               <Image
