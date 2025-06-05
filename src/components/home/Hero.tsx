@@ -72,11 +72,10 @@ export default function Hero() {
         </AnimatePresence>
       </div>
 
-      {/* Hero Content Boxed */}
       <div className="h-full flex justify-center items-center px-4 mt-10">
         <div className="bg-black/40 backdrop-blur-sm rounded-xl p-8 md:p-12 text-center text-white max-w-3xl">
           <h1 className="text-3xl md:text-5xl font-bold">
-            Empowering African Youth Through Tech — Join Us to Sponsor an Intern
+            Empowering African Youth Through Tech! Join Us to Sponsor an Intern
           </h1>
           <p className="mt-4 text-base md:text-lg">
             Verbum Tech Empowerment Program equips aspiring developers with the skills to thrive in the tech world. Help us make tech dreams a reality.

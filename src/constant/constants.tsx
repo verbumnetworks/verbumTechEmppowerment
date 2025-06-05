@@ -1,28 +1,37 @@
 type NavLink = {
-  index: number;
+  id: number;
   title: string;
   url: string;
 };
 
 export const navLinks: NavLink[] = [
   {
-    index: 1,
+    id: 1,
     title: "Home",
     url: "/",
   },
   {
-    index: 2,
+    id: 2,
     title: "About",
     url: "/about",
   },
   {
-    index: 3,
+    id: 3,
     title: "Programs",
     url: "/programs",
   },
-
+   {
+    id: 4,
+    title: "Sponsor",
+    url: "/sponsor",
+  },
+   {
+    id: 5,
+    title: "Blog",
+    url: "/blog",
+  },
   {
-    index: 4,
+    id: 6,
     title: "Contact",
     url: "/contact",
   },
