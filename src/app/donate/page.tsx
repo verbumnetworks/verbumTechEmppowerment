@@ -1,64 +1,63 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 import Pagebanner from "@/components/Pagebanner";
 
-export default function EmpowermentDonatePage() {
+export default function EmpowermentSponsorDonatePage() {
   return (
-    <main >
-        <Pagebanner
+    <main className="min-h-screen bg-white text-[#0C1A2B]">
+      {/* Banner */}
+      <Pagebanner
         title="donate"
-        subtitle ="Who we are and what we stand for"
+        subtitle="Who we are and what we stand for"
         backgroundImage="/assets/hero-img.jpg"
       />
-      {/* Left/Main Content */}
-<section  className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
-      <section className="lg:col-span-2">
-        <h1 className="text-3xl font-bold mb-6">
-          Support Verbum Tech Empowerment Program
-        </h1>
 
-        {/* Banner Image */}
-        <div className="mb-6 rounded overflow-hidden">
-          <Image
-            src="/assets/hero-img.jpg"
-            alt="Empowerment Banner"
-            width={1200}
-            height={400}
-            className="w-full h-64 object-cover rounded"
-          />
-        </div>
+      <section className="max-w-4xl mx-auto px-4 py-10 space-y-12">
+        <div>
+          <h1 className="text-3xl font-bold mb-6 text-center">
+            Support Verbum Tech Empowerment Program
+          </h1>
 
-        {/* Donate Button & Progress */}
-        <button className="bg-orange-500 px-6 py-3 rounded-md text-white hover:bg-orange-600">
-          Donate Now
-        </button>
-
-        <div className="mt-4 mb-2">
-          <div className="bg-gray-300 h-3 rounded-full">
-            <div className="bg-orange-600 h-3 w-3/5 rounded-full" />
+          <div className="mb-6 rounded overflow-hidden">
+            <Image
+              src="/assets/hero-img.jpg"
+              alt="Empowerment Banner"
+              width={1200}
+              height={400}
+              className="w-full h-64 object-cover rounded"
+            />
           </div>
-        </div>
 
-        {/* Description */}
-        <div className="mb-10">
+          <div className="text-center">
+            <button className="bg-orange-500 px-6 py-3 rounded-md text-white hover:bg-orange-600">
+              Donate Now
+            </button>
+          </div>
+
+          <div className="mt-4 mb-6">
+            <div className="bg-gray-300 h-3 rounded-full">
+              <div className="bg-orange-600 h-3 w-3/5 rounded-full" />
+            </div>
+          </div>
+
           <h2 className="text-xl font-semibold mb-2">
             Empowering Youth Through Technology
           </h2>
           <p className="text-gray-700 mb-4">
-            The Verbum Tech Empowerment Program is focused on equipping
-            underprivileged youth in Nigeria with digital skills, from coding to
-            tech entrepreneurship. Your support helps us provide laptops,
-            internet access, and professional mentorship to youths across rural
-            and urban communities.
+            The Verbum Tech Empowerment Program equips underprivileged youth in Nigeria
+            with digital skills—from coding to tech entrepreneurship. Your support
+            provides laptops, internet access, and mentorship to youths in rural and
+            urban areas.
           </p>
           <p className="text-gray-700">
-            With your sponsorship, we can expand training centers, fund
-            certification exams, and create long-term economic impact through
-            technology education.
+            Sponsorship expands training centers, funds certification exams, and fosters
+            long-term economic impact through tech education.
           </p>
         </div>
 
-        {/* Secondary Image */}
-        <div className="mb-6 rounded overflow-hidden">
+        <div>
           <Image
             src="/assets/hero-img.jpg"
             alt="Tech Training"
@@ -68,98 +67,75 @@ export default function EmpowermentDonatePage() {
           />
         </div>
 
-        {/* Challenge Section */}
         <div>
           <h2 className="text-xl font-semibold mb-2">Challenges</h2>
           <p className="text-gray-700">
-          Many talented youths across our communities lack access to the tools, training, and platforms needed to thrive in today’s digital economy. This digital divide continues to widen opportunities for some while leaving others behind.
-
-Verbum Tech Empowerment is our bold response to this challenge. We empower young people by providing community-based innovation hubs where they can gain practical digital skills in variouse tech fields.
-Our programs are designed to be inclusive, affordable, and impact-driven, ensuring that no one is left out due to financial or social limitations.
-
-But we can’t do it alone.
-
-To reach more underserved communities, set up more training centers, and provide up-to-date tools and internet access, we need your support. By partnering with us—whether through donations, sponsorship, or volunteer mentorship—you become a vital part of building a future where every young person has a fair chance to succeed in the digital world.
-
-Together, we can bridge the gap, unlock potential, and transform communities—one empowered youth at a time.
-
-Join the movement. Empower with Verbum.
+            Many talented youths lack access to the tools, training, and platforms
+            needed to thrive in today’s digital economy. Verbum Tech Empowerment is
+            our response: inclusive, community-based innovation hubs offering practical
+            digital skills training. Your support helps us scale this vision to reach
+            more underserved communities.
           </p>
         </div>
-      </section>
 
-      {/* Right Sidebar */}
-      <aside className="lg:col-span-1 space-y-6">
-        {/* Categories */}
-        <div className="bg-gray-100 p-4 rounded">
-          <h3 className="font-bold mb-2">Categories</h3>
-          <ul className="space-y-1 text-sm text-gray-700">
-            <li>Tech Training</li>
-            <li>Mentorship</li>
-            <li>Data Support</li>
-            <li>Hardware Support</li>
-          </ul>
-        </div>
+        <div>
+          <h2 className="text-2xl font-bold mb-4">Why Sponsor an Intern?</h2>
+          <p className="text-gray-700 mb-6">
+            Sponsoring an intern invests in Africa's future innovators. It provides
+            hope, access, and opportunity for youth with limited access to quality tech
+            training.
+          </p>
 
-        {/* Recent Posts */}
-        <div className="bg-gray-100 p-4 rounded">
-          <h3 className="font-bold mb-2">Recent Updates</h3>
-          <ul className="space-y-3 text-sm text-gray-700">
-            <li className="flex items-center space-x-2">
-              <Image
-                src="/assets/hero-img.jpg"
-                alt="Update 1"
-                width={48}
-                height={48}
-                className="rounded w-12 h-12 object-cover"
-              />
-              <span>May Outreach Summary</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <Image
-                src="/assets/hero-img.jpg"
-                alt="Update 2"
-                width={48}
-                height={48}
-                className="rounded w-12 h-12 object-cover"
-              />
-              <span>Meet Our Trainees</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <Image
-                src="/assets/hero-img.jpg"
-                alt="Update 3"
-                width={48}
-                height={48}
-                className="rounded w-12 h-12 object-cover"
-              />
-              <span>Why Tech Is Our Future</span>
-            </li>
-          </ul>
-        </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Areas of Sponsorship</h3>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>Tuition support for a 1-year training program</li>
+                <li>Laptops and internet access</li>
+                <li>Project materials and tech resources</li>
+                <li>Mentorship and career coaching</li>
+                <li>Transport and living stipends</li>
+              </ul>
+            </div>
 
-        {/* Popular Tags */}
-        <div className="bg-gray-100 p-4 rounded">
-          <h3 className="font-bold mb-2">Popular</h3>
-          <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-[#ace7f8] text-teal-950 px-2 py-1 rounded">
-              tech
-            </span>
-            <span className="bg-[#ace7f8] text-teal-950 px-2 py-1 rounded">
-              youth
-            </span>
-            <span className="bg-[#ace7f8] text-teal-950 px-2 py-1 rounded">
-              empowerment
-            </span>
-            <span className="bg-[#ace7f8] text-teal-950 px-2 py-1 rounded">
-              education
-            </span>
-            <span className="bg-[#ace7f8] text-teal-950 px-2 py-1 rounded">
-              future
-            </span>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Program Costs</h3>
+              <ul className="text-gray-700 space-y-2">
+                <li>➔ 📣 Digital Marketing: ₦750,000</li>
+                <li>➔ 💻 Web Development: ₦850,000</li>
+                <li>➔ 🌐 Computer Networking: ₦700,000</li>
+                <li>➔ 🔐 Cybersecurity: ₦850,000</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </aside>
+
+        <div className="bg-orange-50 py-10 px-4 rounded">
+          <h2 className="text-2xl font-bold mb-4">What It Takes to Train an Intern</h2>
+          <p className="text-gray-700 mb-4 max-w-4xl">
+            Sponsoring one intern for a full year includes:
+          </p>
+          <div className="grid md:grid-cols-2 gap-6 text-gray-700">
+            <div>
+              <p>✔ Tuition & Learning Materials: <strong>$500</strong></p>
+              <p>✔ Laptop & Internet Access: <strong>$300</strong></p>
+            </div>
+            <div>
+              <p>✔ Mentorship & Supervision: <strong>$150</strong></p>
+              <p>✔ Transport & Stipends: <strong>$250</strong></p>
+            </div>
+          </div>
+          <p className="mt-6 text-lg font-semibold text-center">
+            Total per intern: <span className="text-orange-600">$1,200</span>
+          </p>
+          <div className="text-center">
+            <Link href="/donate">
+              <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded transition">
+                Donate
+              </button>
+            </Link>
+          </div>
+        </div>
       </section>
     </main>
   );

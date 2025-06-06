@@ -122,3 +122,48 @@ export const programs: Program[] = [
     body: "Cybersecurity is one of the fastest-growing and most critical fields in the tech industry today. As cyber threats become more advanced and frequent, the demand for skilled cybersecurity professionals continues to soar across the world. At Verbum Tech Empowerment, our Cybersecurity Training Program is designed to introduce learners to the fundamentals of protecting digital systems, networks, and data from unauthorized access, attacks, and damage. Participants will gain hands-on experience in topics such as ethical hacking, network security, malware protection, firewalls, cyber threat detection, and risk management. They will also explore real-world scenarios to learn how to identify vulnerabilities and apply protective measures. The course is structured to be beginner-friendly, making it ideal for students, tech enthusiasts, and job seekers with little or no prior experience.This program prepares participants for junior roles such as Cybersecurity Analyst, IT Security Assistant, or Security Operations Center (SOC) Analyst, while also laying the foundation for more advanced certifications like CompTIA Security+, CEH, or CISSP. The training boosts job readiness and opens doors to career paths in corporate IT departments, banks, government institutions, and tech companies.The average monthly earning for a beginner cybersecurity professional in Nigeria ranges from ₦80,000 to ₦300,000, with higher figures for those who gain certifications and experience. Globally, cybersecurity experts are among the highest-paid professionals due to the sensitivity and importance of their work.The cost to train one cybersecurity student through our program is ₦10,000. This fee covers training materials, practical tools, mentorship, tutor support, and a certificate of completion. We also offer lifetime access to learning resources and guidance on further career advancement.We are actively calling on corporate sponsors, donors, and individuals to support our mission to raise a new generation of cybersecurity defenders. By donating just ₦10,000, you can empower a young person with a high-income digital skill that is in demand and future-proof.Make a difference where it counts. Sponsor a cybersecurity trainee today. Your support can help us train more students, reduce unemployment, and build a safer digital world for everyone. Together, we can create opportunities and change lives through technology education.",
   },
 ];
+
+
+type Reason = {
+  id: number;
+  title: string;    
+description: string;
+};
+export const reasons:Reason[] = [
+  {
+    id: 1,
+    title: "Practical Hands-on Training",
+    description:
+      "Our training goes beyond theory—we immerse you in real-world projects that mirror industry scenarios. This hands-on approach ensures you gain practical experience and confidence. You won’t just learn; you’ll do.",
+  },
+  {
+    id: 2,
+    title: "Internship Opportunities",
+    description:
+      "We connect you with real companies where you can apply your skills in a professional setting. Our internship placements are designed to bridge the gap between learning and working. It’s a great opportunity to build your resume and grow your network.",
+  },
+  {
+    id: 3,
+    title: "Tutor Support",
+    description:
+      "You’re never alone on your learning journey. Our experienced tutors are available to offer support, answer questions, and provide feedback. Whether you're stuck on a project or need career advice, we’ve got your back.",
+  },
+  {
+    id:4,
+    title: "Lifetime Access",
+    description:
+      "Once you enroll, you get lifetime access to all course materials and resources. Revisit lessons anytime to refresh your knowledge or learn something new. Your learning doesn’t stop when the program ends—it continues for life.",
+  },
+  {
+    id: 5,
+    title: "Affordable Pricing",
+    description:
+      "We believe quality tech education should be within everyone’s reach. Our programs are competitively priced without compromising on value. Learn valuable skills without stretching your budget.",
+  },
+  {
+    id: 6,
+    title: "Certification",
+    description:
+      "Receive a certificate that validates your skills and commitment upon completing the full one-year program. It serves as proof of your achievement and can be a great addition to your CV or portfolio. Stand out to employers and clients alike.",
+  },
+];
