@@ -6,34 +6,35 @@ const reasons = [
   {
     title: "Practical Hands-on Training",
     description:
-      "We focus on real-world projects that help you apply what you learn immediately.",
+      "Our training goes beyond theory—we immerse you in real-world projects that mirror industry scenarios. This hands-on approach ensures you gain practical experience and confidence. You won’t just learn; you’ll do.",
   },
   {
     title: "Internship Opportunities",
     description:
-      "Gain industry experience with internship placements after training.",
+      "We connect you with real companies where you can apply your skills in a professional setting. Our internship placements are designed to bridge the gap between learning and working. It’s a great opportunity to build your resume and grow your network.",
   },
   {
     title: "Tutor Support",
     description:
-      "Access dedicated tutor support to guide you every step of the way.",
+      "You’re never alone on your learning journey. Our experienced tutors are available to offer support, answer questions, and provide feedback. Whether you're stuck on a project or need career advice, we’ve got your back.",
   },
   {
     title: "Lifetime Access",
     description:
-      "Review course materials anytime with lifetime access after enrollment.",
+      "Once you enroll, you get lifetime access to all course materials and resources. Revisit lessons anytime to refresh your knowledge or learn something new. Your learning doesn’t stop when the program ends—it continues for life.",
   },
   {
     title: "Affordable Pricing",
     description:
-      "Learn valuable tech skills without breaking the bank. Learn valuable tech skills without breaking the bank. Learn valuable tech skills without breaking the bank.",
+      "We believe quality tech education should be within everyone’s reach. Our programs are competitively priced without compromising on value. Learn valuable skills without stretching your budget.",
   },
   {
     title: "Certification",
     description:
-      "Get a certificate upon completion of the one year program.",
+      "Receive a certificate that validates your skills and commitment upon completing the full one-year program. It serves as proof of your achievement and can be a great addition to your CV or portfolio. Stand out to employers and clients alike.",
   },
 ];
+
 
 export default function WhyChooseUs() {
   return (
@@ -78,7 +79,7 @@ export default function WhyChooseUs() {
               viewport={{ once: true }}
             >
               <h3 className="text-xl font-semibold text-black mb-2">{reason.title}</h3>
-              <p className="text-gray-600">{reason.description}</p>
+              <p className="text-gray-600 text-justify hover:cursor-pointer">{reason.description}</p>
             </motion.div>
           ))}
         </div>

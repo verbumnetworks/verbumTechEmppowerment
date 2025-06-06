@@ -10,10 +10,9 @@ const VideoModal = () => {
 
   return (
     <>
-      {/* Trigger Button */}
       <button
         onClick={openModal}
-        className="flex items-center text-sm font-semibold text-blue-600 hover:underline mt-4"
+        className="flex items-center justify-center text-sm font-semibold  cursor-pointer text-blue-600 hover:underline mt-4"
       >
         <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center mr-2">
           <svg
@@ -27,9 +26,8 @@ const VideoModal = () => {
         Watch Our Intro!
       </button>
 
-      {/* Modal */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center">
+        <div className="fixed inset-0 backdrop-blur-sm bg-black/40 z-50 flex items-center justify-center">
           <div className="relative w-[90%] max-w-3xl aspect-video">
             <iframe
               width="100%"
