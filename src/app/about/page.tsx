@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Pagebanner from '@/components/Pagebanner';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { title } from 'process';
 
 const values = [
   {
@@ -70,7 +69,7 @@ const AboutPage = () => {
         <div>
           <h3 className="text-2xl font-bold text-gray-800 mb-4">Who We Are</h3>
           <p className="text-gray-600 text-justify">
-            Our goal is to bridge the digital skills gap by offering hands-on, practical training in areas such as graphic design, web development, computer literacy, UI/UX design, video editing, cybersecurity, and digital marketing. Whether you're a beginner or looking to upskill, our program provides the tools and mentorship you need to thrive in the digital economy. At Verbum, we believe technology is a powerful tool for personal and economic growth, and we are committed to empowering communities through knowledge, skills, and innovation. Join us and take the first step towards a tech-driven future!
+            Our goal is to bridge the digital skills gap by offering hands-on, practical training in areas such as graphic design, web development, computer literacy, UI/UX design, video editing, cybersecurity, and digital marketing. Whether you`re a beginner or looking to upskill, our program provides the tools and mentorship you need to thrive in the digital economy. At Verbum, we believe technology is a powerful tool for personal and economic growth, and we are committed to empowering communities through knowledge, skills, and innovation. Join us and take the first step towards a tech-driven future!
           </p>
           <Link href="/donate">
             <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded transition">
