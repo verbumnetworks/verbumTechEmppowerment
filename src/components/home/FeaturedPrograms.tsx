@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import constants from "constants";
 import { featuredprograms } from "@/constant/constants";
 
 export default function FeaturedPrograms() {
@@ -16,7 +15,7 @@ export default function FeaturedPrograms() {
       transition={{ duration: 0.6 }}
     >
       <motion.h2
-        className="text-2xl md:text-3xl font-semibold text-center mb-8"
+        className="text-2xl md:text-4xl font-semibold text-center mb-8 bg-gradient-to-b from-black to-orange-500 text-transparent bg-clip-text"
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import DonateButton from "../button/DonateButton";
 
 const heroImages = [
   "/assets/hero-img.jpg",
@@ -78,21 +79,23 @@ export default function Hero() {
             Empowering African Youth Through Tech! Join Us to Sponsor an Intern
           </h1>
           <p className="mt-4 text-base md:text-lg">
-            Verbum Tech Empowerment Program equips aspiring developers with the skills to thrive in the tech world. Help us make tech dreams a reality.
+            Verbum Tech Empowerment Program equips aspiring developers with the
+            skills to thrive in the tech world. Help us make tech dreams a
+            reality.
           </p>
           <div className="mt-6 flex gap-4 flex-wrap justify-center">
-            <a
-              href="/donate"
-              className="bg-orange-500 px-6 py-3 rounded-md text-white hover:bg-orange-600"
-            >
-              Donate Now
-            </a>
-            <a
-              href="/sponsor"
-              className="border border-white px-6 py-3 rounded-md text-white hover:bg-white hover:text-black transition"
-            >
-              Sponsor an Intern
-            </a>
+            <DonateButton
+              link="/donate"
+              label="Donate Now"
+              className="px-6 py-3 rounded-md"
+            />
+            <DonateButton
+              link="/sponsor"
+              label="Sponsor an intern"
+              className="border border-orange-500 bg-transparent px-6 py-3 rounded-md text-white hover:bg-white hover:text-black transition"
+              variant="outline"
+            />
+
           </div>
         </div>
       </div>

@@ -17,8 +17,8 @@ const AboutSection = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-            Verbun Networks FREE <span className="text-orange-700">Tech Empowerment Program</span>
+          <h2 className="text-2xl md:text-4xl font-bold bg-gradient-to-b from-black to-orange-500 text-transparent bg-clip-text">
+            Verbun Networks FREE Tech Empowerment Program
           </h2>
           <p className="text-gray-800 mb-6">
           The Verbum Tech Empowerment Program is an initiative by Verbum Networks Limited designed to equip individuals—especially youths, students, entrepreneurs, and career switchers—with essential digital and technological skills for today’s fast-evolving world.
