@@ -55,7 +55,7 @@ export default function FaqSection() {
 
           {/* Animated FAQ Panel */}
           <motion.div
-            className="bg-[#ace7f8] text-teal-950 rounded-lg p-6 shadow space-y-4"
+            className="bg-gray-300 text-teal-950 rounded-lg p-6 shadow space-y-4"
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}

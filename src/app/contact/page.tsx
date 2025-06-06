@@ -80,7 +80,7 @@ const Contact: React.FC = () => {
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
     {/* Call Support */}
-    <div className="bg-teal-50 p-6 rounded-lg shadow text-center">
+    <div className="bg-gray-300 p-6 rounded-lg shadow text-center">
       <Phone className="w-6 h-6 mb-4 text-teal-700 mx-auto" />
       <h3 className="font-semibold mb-2">Call Support</h3>
       <p className="text-gray-600">Reach us by phone Mon–Fri 9am–5pm.</p>
@@ -88,14 +88,14 @@ const Contact: React.FC = () => {
     </div>
 
     {/* Chat With Us */}
-    <div className="bg-teal-50 p-6 rounded-lg shadow text-center">
+    <div className="bg-gray-300 p-6 rounded-lg shadow text-center">
       <MessageCircle className="w-6 h-6 mb-4 text-teal-700 mx-auto" />
       <h3 className="font-semibold mb-2">Chat With Us</h3>
       <p className="text-gray-600">Live chat available 24/7 for quick help.</p>
     </div>
 
     {/* Address */}
-    <div className="bg-teal-50 p-6 rounded-lg shadow text-center">
+    <div className="bg-gray-300 p-6 rounded-lg shadow text-center">
       <MapPin className="w-6 h-6 mb-4 text-teal-700 mx-auto " />
       <h3 className="font-semibold mb-2">Address</h3>
       <p className="text-gray-600">
