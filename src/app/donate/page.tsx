@@ -71,7 +71,7 @@ export default function EmpowermentSponsorDonatePage() {
           <h2 className="text-xl font-semibold mb-2">Challenges</h2>
           <p className="text-gray-700">
             Many talented youths lack access to the tools, training, and platforms
-            needed to thrive in today’s digital economy. Verbum Tech Empowerment is
+            needed to thrive in today`s digital economy. Verbum Tech Empowerment is
             our response: inclusive, community-based innovation hubs offering practical
             digital skills training. Your support helps us scale this vision to reach
             more underserved communities.

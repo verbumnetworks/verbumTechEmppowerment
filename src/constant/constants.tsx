@@ -23,7 +23,7 @@ export const navLinks: NavLink[] = [
    {
     id: 4,
     title: "Sponsor",
-    url: "/sponsor",
+    url: "/donate",
   },
    {
     id: 5,

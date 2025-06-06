@@ -21,7 +21,7 @@ const AboutSection = () => {
             Verbun Networks FREE Tech Empowerment Program
           </h2>
           <p className="text-gray-800 mb-6">
-          The Verbum Tech Empowerment Program is an initiative by Verbum Networks Limited designed to equip individuals—especially youths, students, entrepreneurs, and career switchers—with essential digital and technological skills for today’s fast-evolving world.
+          The Verbum Tech Empowerment Program is an initiative by Verbum Networks Limited designed to equip individuals—especially youths, students, entrepreneurs, and career switchers—with essential digital and technological skills for today`s fast-evolving world.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
