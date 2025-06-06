@@ -12,7 +12,9 @@ export default function EmpowermentSponsorDonatePage() {
         title="donate"
         subtitle="Who we are and what we stand for"
         backgroundImage="/assets/hero-img.jpg"
+        
       />
+
 
       <section className="max-w-4xl mx-auto px-4 py-10 space-y-12">
         <div>
@@ -22,7 +24,7 @@ export default function EmpowermentSponsorDonatePage() {
 
           <div className="mb-6 rounded overflow-hidden">
             <Image
-              src="/assets/hero-img.jpg"
+              src="/assets/youth1.jpg"
               alt="Empowerment Banner"
               width={1200}
               height={400}
@@ -81,7 +83,7 @@ export default function EmpowermentSponsorDonatePage() {
         <div>
           <h2 className="text-2xl font-bold mb-4">Why Sponsor an Intern?</h2>
           <p className="text-gray-700 mb-6">
-            Sponsoring an intern invests in Africa's future innovators. It provides
+            Sponsoring an intern invests in Africa`s future innovators. It provides
             hope, access, and opportunity for youth with limited access to quality tech
             training.
           </p>
