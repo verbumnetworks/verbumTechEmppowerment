@@ -14,14 +14,25 @@ export default function FeaturedPrograms() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
-      <motion.h2
-        className="text-2xl md:text-4xl font-semibold text-center mb-8 bg-gradient-to-b from-black to-orange-500 text-transparent bg-clip-text"
+      <div className="max-w-6xl mx-auto px-6 text-center">  <motion.h2
+        className="text-3xl md:text-5xl font-bold  text-center mb-8 bg-gradient-to-b from-black to-orange-500 text-transparent bg-clip-text"
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
       >
-        Featured Program
+        Our Featured Program
       </motion.h2>
+      <motion.p
+        className="text-gray-600 mb-12 max-w-2xl mx-auto"
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        We provide more than just tech training—we provide empowerment. Here’s
+        why hundreds of students trust us to launch their digital careers.
+      </motion.p></div>
+    
 
       <div className="grid gap-6 md:grid-cols-3 cursor-pointer">
         {featuredprograms.map((program, id) => (

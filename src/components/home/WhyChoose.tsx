@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
     >
       <div className="max-w-6xl mx-auto px-6 text-center">
         <motion.h2
-          className="text-3xl  md:text-4xl font-bold mb-6 bg-gradient-to-b from-black to-orange-500 text-transparent bg-clip-text"
+          className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-b from-black to-orange-500 text-transparent bg-clip-text"
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}

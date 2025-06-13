@@ -17,11 +17,7 @@ const faqData = [
     question: "Join Your Hand With Us For a Better Life",
     answer: "Partner with us and help spread kindness around the world.",
   },
-  {
-    question: "How Do I Cancel My Recurring Donation?",
-    answer:
-      "Log in and go to settings > billing to cancel recurring donations.",
-  },
+
   {
     question: "What Payment Methods Are Accepted?",
     answer:
@@ -34,7 +30,7 @@ export default function FaqSection() {
     <section className="bg-white py-16">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-xl text-gray-500 mb-4">Have Any Question?</h2>
-        <h1 className="text-3xl font-bold mb-10">Frequently Asked Questions</h1>
+        <h1 className="text-3xl md:text-5xl font-bold mb-10 bg-gradient-to-b from-black to-orange-500 text-transparent bg-clip-text">Frequently Asked Questions</h1>
 
         <div className="grid md:grid-cols-2 gap-10 items-start">
           {/* Animated Image */}
@@ -55,7 +51,7 @@ export default function FaqSection() {
 
           {/* Animated FAQ Panel */}
           <motion.div
-            className="bg-gray-300 text-teal-950 rounded-lg p-6 shadow space-y-4"
+            className="bg-orange-50 text-black rounded-lg p-6 shadow space-y-4"
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}

@@ -17,7 +17,7 @@ const AboutSection = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl md:text-4xl font-bold bg-gradient-to-b from-black to-orange-500 text-transparent bg-clip-text">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-b from-black to-orange-500 text-transparent bg-clip-text">
             Verbun Networks FREE Tech Empowerment Program
           </h2>
           <p className="text-gray-800 mb-6">

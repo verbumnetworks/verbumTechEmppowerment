@@ -167,3 +167,4 @@ export const reasons:Reason[] = [
       "Receive a certificate that validates your skills and commitment upon completing the full one-year program. It serves as proof of your achievement and can be a great addition to your CV or portfolio. Stand out to employers and clients alike.",
   },
 ];
+

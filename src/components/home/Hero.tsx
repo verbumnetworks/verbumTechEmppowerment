@@ -75,7 +75,7 @@ export default function Hero() {
 
       <div className="h-full flex justify-center items-center px-4 mt-10">
         <div className="bg-black/40 backdrop-blur-sm rounded-xl p-8 md:p-12 text-center text-white max-w-3xl">
-          <h1 className="text-3xl md:text-5xl font-bold">
+          <h1 className="text-3xl md:text-5xl font-bold ">
             Empowering African Youth Through Tech! Join Us to Sponsor an Intern
           </h1>
           <p className="mt-4 text-base md:text-lg">
@@ -90,7 +90,7 @@ export default function Hero() {
               className="px-6 py-3 rounded-md"
             />
             <DonateButton
-              link="/sponsor"
+              link="/donate"
               label="Sponsor an intern"
               className="border border-orange-500 bg-transparent px-6 py-3 rounded-md text-white hover:bg-white hover:text-black transition"
               variant="outline"

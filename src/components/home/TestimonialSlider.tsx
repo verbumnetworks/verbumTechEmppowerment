@@ -14,7 +14,7 @@ const testimonials = [
   },
   {
     quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
     name: "Amira",
     school: "Hope Academy",
     image: "/assets/youth1.jpg",
@@ -36,8 +36,7 @@ export default function TestimonialSlider() {
 
   return (
     <section className="bg-[#0B1D29] text-white py-12 px-4 md:px-8 lg:px-16">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-8">Testimonials</h2>
-
+      <h2 className="text-3xl md:text-5xl font-semibold mb-8">Testimonials</h2>
       <div className="grid md:grid-cols-2 gap-6 items-center">
         <div className="relative">
           <AnimatePresence mode="wait">
