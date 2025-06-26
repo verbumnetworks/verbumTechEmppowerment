@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import Pagebanner from "@/components/Pagebanner";
 
 export default function EmpowermentSponsorDonatePage() {
@@ -12,9 +11,7 @@ export default function EmpowermentSponsorDonatePage() {
         title="donate"
         subtitle="Who we are and what we stand for"
         backgroundImage="/assets/hero-img.jpg"
-        
       />
-
 
       <section className="max-w-4xl mx-auto px-4 py-10 space-y-12">
         <div>
@@ -32,12 +29,6 @@ export default function EmpowermentSponsorDonatePage() {
             />
           </div>
 
-          <div className="text-center">
-            <button className="bg-orange-500 px-6 py-3 rounded-md text-white hover:bg-orange-600">
-              Donate Now
-            </button>
-          </div>
-
           <div className="mt-4 mb-6">
             <div className="bg-gray-300 h-3 rounded-full">
               <div className="bg-orange-600 h-3 w-3/5 rounded-full" />
@@ -48,14 +39,14 @@ export default function EmpowermentSponsorDonatePage() {
             Empowering Youth Through Technology
           </h2>
           <p className="text-gray-700 mb-4">
-            The Verbum Tech Empowerment Program equips underprivileged youth in Nigeria
-            with digital skills—from coding to tech entrepreneurship. Your support
-            provides laptops, internet access, and mentorship to youths in rural and
-            urban areas.
+            The Verbum Tech Empowerment Program equips underprivileged youth in
+            Nigeria with digital skills—from coding to tech entrepreneurship.
+            Your support provides laptops, internet access, and mentorship to
+            youths in rural and urban areas.
           </p>
           <p className="text-gray-700">
-            Sponsorship expands training centers, funds certification exams, and fosters
-            long-term economic impact through tech education.
+            Sponsorship expands training centers, funds certification exams, and
+            fosters long-term economic impact through tech education.
           </p>
         </div>
 
@@ -72,25 +63,27 @@ export default function EmpowermentSponsorDonatePage() {
         <div>
           <h2 className="text-xl font-semibold mb-2">Challenges</h2>
           <p className="text-gray-700">
-            Many talented youths lack access to the tools, training, and platforms
-            needed to thrive in today`s digital economy. Verbum Tech Empowerment is
-            our response: inclusive, community-based innovation hubs offering practical
-            digital skills training. Your support helps us scale this vision to reach
-            more underserved communities.
+            Many talented youths lack access to the tools, training, and
+            platforms needed to thrive in today`s digital economy. Verbum Tech
+            Empowerment is our response: inclusive, community-based innovation
+            hubs offering practical digital skills training. Your support helps
+            us scale this vision to reach more underserved communities.
           </p>
         </div>
 
         <div>
           <h2 className="text-2xl font-bold mb-4">Why Sponsor an Intern?</h2>
           <p className="text-gray-700 mb-6">
-            Sponsoring an intern invests in Africa`s future innovators. It provides
-            hope, access, and opportunity for youth with limited access to quality tech
-            training.
+            Sponsoring an intern invests in Africa`s future innovators. It
+            provides hope, access, and opportunity for youth with limited access
+            to quality tech training.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-semibold text-lg mb-2">Areas of Sponsorship</h3>
+              <h3 className="font-semibold text-lg mb-2">
+                Areas of Sponsorship
+              </h3>
               <ul className="list-disc list-inside text-gray-700 space-y-2">
                 <li>Tuition support for a 1-year training program</li>
                 <li>Laptops and internet access</li>
@@ -113,31 +106,69 @@ export default function EmpowermentSponsorDonatePage() {
         </div>
 
         <div className="bg-orange-50 py-10 px-4 rounded">
-          <h2 className="text-2xl font-bold mb-4">What It Takes to Train an Intern</h2>
+          <h2 className="text-2xl font-bold mb-4">
+            What It Takes to Train an Intern
+          </h2>
           <p className="text-gray-700 mb-4 max-w-4xl">
             Sponsoring one intern for a full year includes:
           </p>
           <div className="grid md:grid-cols-2 gap-6 text-gray-700">
             <div>
-              <p>✔ Tuition & Learning Materials: <strong>$500</strong></p>
-              <p>✔ Laptop & Internet Access: <strong>$300</strong></p>
+              <p>
+                ✔ Tuition & Learning Materials: <strong>$500</strong>
+              </p>
+              <p>
+                ✔ Laptop & Internet Access: <strong>$300</strong>
+              </p>
             </div>
             <div>
-              <p>✔ Mentorship & Supervision: <strong>$150</strong></p>
-              <p>✔ Transport & Stipends: <strong>$250</strong></p>
+              <p>
+                ✔ Mentorship & Supervision: <strong>$150</strong>
+              </p>
+              <p>
+                ✔ Transport & Stipends: <strong>$250</strong>
+              </p>
             </div>
           </div>
           <p className="mt-6 text-lg font-semibold text-center">
             Total per intern: <span className="text-orange-600">$1,200</span>
           </p>
-          <div className="text-center">
-            <Link href="/donate">
-              <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded transition">
-                Donate
-              </button>
-            </Link>
+          <div className="mt-10">
+          <div className="border rounded-lg p-4 bg-white shadow-sm text-center">
+            <h3 className="font-bold text-4xl mb-2">
+              Bank Transfer (Naira)
+            </h3>
+            <p>
+              <strong>Bank:</strong> Zenith Bank
+            </p>
+            <p>
+              <strong>Account Name:</strong> Verbum Networks Limited
+            </p>
+            <p>
+              <strong>Account Number:</strong> 1011567764
+            </p>
           </div>
+
+          {/* <div className="border rounded-lg p-4 bg-white shadow-sm">
+            <h3 className="font-semibold text-lg mb-2">
+              International Donations (USD)
+            </h3>
+            <p>
+              <strong>Bank:</strong> Access Bank
+            </p>
+            <p>
+              <strong>SWIFT Code:</strong> ABNGNGLA
+            </p>
+            <p>
+              <strong>Account Name:</strong> Verbum Tech Foundation
+            </p>
+            <p>
+              <strong>Account Number:</strong> 9876543210
+            </p>
+          </div> */}
         </div>
+        </div>
+       
       </section>
     </main>
   );
